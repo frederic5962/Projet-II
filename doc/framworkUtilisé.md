@@ -1,0 +1,5 @@
+- Studio Visual Code (Codage)
+- Figma (Maquettage)
+- Metis(Consultation & aide)
+- Looping (Création MCD/MLD)
+- Microsoft SQL Server/ MySQL via WAMP / MAMP (SGBD)
