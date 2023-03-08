@@ -1,0 +1,26 @@
+footer {
+
+    background-color: rgba(136, 58, 58, 0.768);
+    padding: 50px 100px;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    top: 40rem;
+    justify-content: flex;
+    position: relative;
+    outline: none;
+    font-weight: bold;
+}
+
+footer .footer-colonne{ /* appel au footer et ensuite va a la balise demander "colonne" */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+
+} 
+
+ul li{
+    list-style: none;
+};
