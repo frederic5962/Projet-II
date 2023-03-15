@@ -52,7 +52,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
                 <p>Nom: <?= $nom['nom'] ?></p>
                 <p>Prenom: <?= $nom['prenom'] ?></p>
                 <p>Email: <?= $nom['email'] ?></p>
-                <p>Mdp: <?= $nom['mdp'] ?></p>
+                <input type="password" id="mdp" name="mdp" minlength="8" required>
                 <p><a href="index.php">Retour</a> <a href="edit.php?id=<?= $nom['id'] ?>">Modifier</a></p>
             </section>
         </div>

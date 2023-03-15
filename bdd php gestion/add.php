@@ -78,7 +78,7 @@ require_once('close.php');
                     </div>
                     <div class="form-group">
                         <label for="mdp">Mdp</label>
-                        <input type="text" id="mdp" name="mdp" class="form-control">
+                        <input type="password" id="mdp" name="mdp" minlength="8" required>
                     </div>
                     <button class="btn btn-primary">Envoyer</button>
                </form> 

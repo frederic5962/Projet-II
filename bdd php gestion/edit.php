@@ -111,7 +111,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
                     </div>
                     <div class="form-group">
                         <label for="mdp">Mdp</label>
-                        <input type="text" id="mdp" name="mdp"  class="form-control"  ?>">
+                        <input type="password" id="mdp" name="mdp" minlength="8" required>
                     </div>
                     <input type="hidden" value="<?= $nom['id'] ?>" name="id">
                     <button class="btn btn-primary">Envoyer</button>

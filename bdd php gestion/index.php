@@ -70,7 +70,7 @@ require_once('close.php');
                                 <td><?= $nom['nom']?></td>
                                 <td><?= $nom['prenom']?></td>
                                 <td><?= $nom['email']?></td>
-                                <td><?= $nom['mdp']?></td>
+                                <td><input type="password" id="mdp" name="mdp" minlength="8" required></td>
                                 <td><a href="details.php?id=<?= $nom['id']?>">Voir</a> 
                                     <a href="edit.php?id=<?=$nom['id']?>">Modifier</a>
                                     <a href="delete.php?id=<?=$nom['id']?>">Supprimer</a>
