@@ -6,3 +6,8 @@
 - Boostrap 
 
 Pixabay (fournisseur d'image libre de droit)"background,ilustration pour le site"
+youtube 
+
+
+google
+Fira Code -> installer et utilisé pour les ligature style (=/=, -->; ===)
