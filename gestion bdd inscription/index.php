@@ -1,21 +1,58 @@
+<?php
+//on demarre une session
+session_start();
+
+//on inclut la connection a la base 
+require_once('connect.php');
+
+$sql = 'SELECT * FROM `utilisateur`';
+
+//on prepare la requete
+$query = $db->prepare($sql);
+
+//on execute la requete
+$query->execute();
+
+//on staock le resultat dans un tableau asso
+$result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+require_once('close.php');
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
     
     <title>Header</title>
-    <link rel="stylesheet" type="text/css" href="header.css" />
+    <img src="./images/banniere.png" alt="banniere" width="100%" height="250px">
+<h1>Ne jamais oublier</h1> 
+   
 </head>
-<h1>Ne Jamais Oublier</h1>
-<body>
-    <img src="./images/image.jpg" alt="banniere" width="100%" height="300px">
 
+<body>
+
+<?php
+                    if(!empty($_SESSION['erreur'])){
+                        echo '<div class="alert alert-danger" role="alert">
+                        '. $_SESSION['erreur'].'
+                      </div>';
+                      $_SESSION['erreur'] = "";
+                    }
+                    ?>
+                    <?php
+                    if(!empty($_SESSION['message'])){
+                        echo '<div class="alert alert-success" role="alert">
+                        '. $_SESSION['message'].'
+                      </div>';
+                      $_SESSION['message'] = "";
+                    }
+?>
     <form class="row g-3">
         <div class="row g-3">
             <div class="col-md-6">
