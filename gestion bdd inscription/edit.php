@@ -53,7 +53,7 @@ $_SESSION['erreur'] = "le formulaire est incomplet";
 if(isset($_GET['id']) && !empty($_GET['id'])){
     require_once('connect.php');
 
-    //on nkettoie l'id envoyé
+    //on nettoie l'id envoyé
     $id = strip_tags($_GET['id']);
 
     $sql = 'SELECT * FROM `utilisateur` WHERE `id` =:id';
