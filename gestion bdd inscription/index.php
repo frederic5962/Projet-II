@@ -13,7 +13,7 @@ $query = $db->prepare($sql);
 //on execute la requete
 $query->execute();
 
-//on staock le resultat dans un tableau asso
+//on stock le resultat dans un tableau asso
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 require_once('close.php');
