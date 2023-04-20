@@ -1,21 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 header{
-    padding: 10px 20px;
-    box-shadow: var(--box--shadow-nav);
-    background-color: blueviolet;
+   padding: 10px 20px;
+   box-shadow: var(--box--shadow-nav);  
 }
+
+header input{
+    border-radius: 25px;
+    height: 20px;
+    width :200px;
+    text-align: center;
+}
+
 
 
  header h1{
 position: relative;
 text-align: center;
 text-shadow:3px 3px 8px;
-color: rgb(247, 99, 217);
-font-family: 'Farsan', cursive;
+color: green;
+font-family: 'pacifico', sans-serif;
 letter-spacing:3px;
 
 }
+
+
+header .logo img{
+    position: relative;
+ width: 50px;
+ float: right;
+ margin: auto;
+ top: -80px;
+
+}
+    
+ 
+
+
+
 
 body{
     background-color: rgba(127, 255, 212, 0.569);
@@ -133,31 +155,42 @@ nav > ul > li:hover > a{
 .one img{
     
     margin-top: 100px;
-    z-index: 2px;
+    /* z-index: 2; */
     border-radius: 15px;
     margin-left: 30px;
 }
 
-.two img{
-    
+.image .txt{
+    border: solid 2px black;
+    border-radius: 5px;
+    max-width: 800px; 
+    height: 300px;
     position: relative;
-   left: 1250px;
-   border-radius:50px;
+    float: right;
+    top: -350px;
+    margin-right: 50px;
+    z-index: -1;
 }
 
+.image .txt p{
+    font-size: 20px;
+    font-family: 'Farsan', sans-serif;
+    font-weight: bold;
+}
 
-.three img{
+.two img{
     border-radius: 20px;
     margin-top: 100px;
-    
-}
-.three{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
-.txt section {
-    border-radius: 2px;
-    color: black;
+
+h2{
+    color: rgb(226, 122, 10);
 }
+
+
+
+
 
 
